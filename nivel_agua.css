@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#sessao_geral {
+    background-color: bisque;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* layout padrão desktop */
+    gap: 10px;
+    place-items: center;
+}
+
+.bloco_generico {
+    background-color: cadetblue;
+    height: 80%;
+    width: 80%;
+}
+
+
+@media (max-width: 800px) {
+  #sessao_geral {
+    grid-template-columns: 1fr;
+  }
+}
